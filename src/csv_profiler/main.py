@@ -7,12 +7,9 @@ def main() -> None:
     print(f"path={path}")
     print(f"rows={len(rows)}")
 
-    if not rows:
-        print("No rows were read. Check the file path and file content.")
-        return
-
-    print("first row:")
-    print(rows[0])
+    if rows:
+        print("first row:")
+        print(rows[0])
 
 if __name__ == "__main__":
     main()
